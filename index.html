@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>What is This Project About?</h1>
 
+    <p>
+      Feelsify.io is a web that allows users to record their daily levels of
+      anxiety, stress, and depression. Users will also be able to include brief
+      notes that might be relevant to how they are feeling. The app will store
+      this information and provide users with easy-to-read graphs that will
+      display trends in their mood. This app is ideal for users who want to stay
+      on top of their mental health and be able to recognize any prolonged,
+      negative trends of anxiety, stress, or depression, which can be
+      detrimental to their health and well-being. In the future, we will add
+      quizzes that hope to help users determine whether or not they might be
+      experiencing anxiety, stress, depression, and even burn out.
+    </p>
+
+    <h1>Tech Stacks</h1>
+    <h2>Frontend:</h2>
+    <ul>
+      <li>React - client UI</li>
+      <li>Tailwind - CSS</li>
+      <li>
+        Redux - Global state management (specifically react redux toolkit)
+      </li>
+      <li>Yup - Client side form validation</li>
+      <li>Axios - http client for react</li>
+    </ul>
+    <h2>Backend:</h2>
+    <ul>
+      <li>ExpressJS - - Server</li>
+      <li>Bcrypt - Password hashing</li>
+      <li>MongoDB (?)</li>
+    </ul>
+    <h2>Other Tools for Development</h2>
+    <ul>
+      <li>Postman - For API debugging</li>
+      <li>
+        Redux devTools plugin for firefox or chrome - For state management
+        debugging
+      </li>
+      <li>
+        React developer tools plugin for firefox or chrome - For react debugging
+      </li>
+    </ul>
+    <h1>Where is this project hosted</h1>
+    <p>? TBD</p>
+    <h1>Folder Structure</h1>
+    <pre>
+    . 
+    ├── .github/ISSUE_TEMPLATE 
+    ├── client <- frontend part 
+    │   ├── dist 
+    │   ├── public 
+    │   ├── src 
+    │   │   ├── components <- all react components 
+    │   │   ├── images <- images and assets 
+    │   │   ├── App.css 
+    │   │   ├── App.js 
+    │   │   ├── App.test.js 
+    │   │   ├── index.css 
+    │   │   ├── index.js 
+    │   │   ├── reportWebVitals.js 
+    │   │   ├── setupTests.js 
+    │   │   └── store.js <- Redux related 
+    │   ├── .gitignore 
+    │   ├── README.md 
+    │   ├── package-lock.json 
+    │   ├── package.json 
+    │   ├── postcss.config.js
+    │   └── tailwind.config.js <- config file for tailwind 
+    ├── common 
+    ├── server <- backend part of the project 
+    │   ├── APIrouter.js 
+    │   ├── README.md 
+    │   ├── index.js 
+    │   ├── mockAPI.js 
+    │   ├── mockData.js 
+    │   ├── package-lock.json 
+    │   ├── package.json 
+    │   └── start_server.sh 
+    ├── .gitignore 
+    ├── LICENSE 
+    └── README.md
+    </pre>
