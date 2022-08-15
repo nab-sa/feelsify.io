@@ -91,3 +91,87 @@
     ├── LICENSE 
     └── README.md
     </pre>
+     <h1>Running the Project Locally</h1>
+    <p>
+      In order to run the project locally, both client and server app needs to
+      be running.
+    </p>
+    <h2>Starting the Client side</h2>
+    <ul>
+      <li>navigate to ./client</li>
+      <li>Run npm install to install all dependencies</li>
+      <li>
+        Run npm start to start in development mode (default port is 3000 on
+        localhost)
+      </li>
+    </ul>
+
+    <h2>Starting the Server side</h2>
+    <ul>
+      <li>Navigate to ./server</li>
+      <li>Run npm install to install all dependencies first</li>
+    </ul>
+
+
+      <p>From here, You can start the server in 2 ways:</P> 
+        <p>1. `clear && PORT=3001 node index.js` </p> 
+        <p>This command starts the server on port 3001. Open
+      http://localhost:3001/api to view it in your browser. Since React client
+      runs on port 3000 by default, it is recommended to specify the port number
+      when you start the server. </p>
+      
+      <p>2. Start the server with ./start_server.sh</p> 
+      <p> Run
+      -./start_server.sh in the terminal. This will automatically start the
+      server on port 3001. You may first need to make the bash script executable
+      with the command chmod u+x start_server.sh
+    </p>
+    <h1>How to login:</h1>
+    <p>
+      You can use any account in ./client/mockData.js to login. Just use the
+      values of username and password. The easiest account to login is:
+      username: test123 password: test
+    </p>
+    <h1>Note</h1>
+    <p>
+      Server does not work with the browser The server has been designed to work
+      with the client, not with the browser. You can use the program "POSTMAN"
+      to function as an alternative client for development and testing purposes.
+      To see all the available routes and API calls for the server go to
+      APIrouter.js (routes) and mockAPI.js (functions).
+    </p>
+
+    <p>
+      NOTE: As of now, there is no official database yet. All non hard-coded
+      user data will be lost when the server restarts.
+    </p>
+    <h1>For Contributors</h1>
+    <p>
+      <ul>
+        <li>
+          Give each commit a descriptive message
+        </li>
+        <li>
+           Ideally, each commit contains an isolated, complete change
+        </li> 
+      </ul>
+        <p>See here for more details: https://docs.github.com/en/get-started/quickstart/github-flow#make-changes</p>
+      <h2>Branch naming convention</h2> 
+      <p>TBD</p> 
+      <h1>Resource</h1> 
+      <h2>Design</h2> 
+      Figma for design reference:
+      https://www.figma.com/file/ucsB47XQhtF0xqXDrLgKlR/emotional-paw-prints
+      <h2>Others:</h2>
+    </p>
+
+    <h1>Roadmap</h1>
+    <p>TBD</p>
+    <h1>Organization Roles</h1>
+    <p>
+      Here is are a list of people who contribute to the project. If you
+      encounter any issues with the project, please contact [list of people]
+    </p>
+  </body>
+</html>
+
