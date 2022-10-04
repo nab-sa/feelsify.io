@@ -1,1 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #ffffff;
+  color: #000;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 2;
+  font-family: "Roboto Mono";
+  padding: 3rem;
+}
+
+h1 {
+  width: fit-content;
+  text-align: center;
+  margin: 1.5rem auto 3rem auto;
+  font-size: 2.8rem;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  font-weight: bolder;
+}
+
+h2 {
+  width: fit-content;
+  font-size: 1.7rem;
+  padding: 0.8rem;
+  margin: 1.3rem 2.5rem 3.5rem 1.3rem;
+  color: rgb(0, 0, 0);
+  box-shadow: 15px 16px #abfef3;
+  background-color: #b8dad0;
+  font-weight: 900;
+}
+
+h3 {
+  margin: 0 0 2.1rem 1.3rem;
+  text-decoration: underline;
+}
