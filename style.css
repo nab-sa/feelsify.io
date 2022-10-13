@@ -5,13 +5,14 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #f8f8f7;
   color: #000;
   margin: 0 auto;
-  font-size: 1.1rem;
-  line-height: 2;
-  font-family: "Roboto Mono";
-  padding: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-family: "Roboto Mono", monospace;
+  display: grid;
+  grid-template-columns: 24% 2fr;
 }
 
 h1 {
@@ -19,7 +20,6 @@ h1 {
   text-align: center;
   margin: 1.5rem auto 3rem auto;
   font-size: 2.8rem;
-  background-color: rgb(255, 255, 255);
   color: #000000;
   font-weight: bolder;
 }
@@ -28,14 +28,103 @@ h2 {
   width: fit-content;
   font-size: 1.7rem;
   padding: 0.8rem;
-  margin: 1.3rem 2.5rem 3.5rem 1.3rem;
+  margin: 1.3rem 2.5rem 3.5rem 0;
   color: rgb(0, 0, 0);
-  box-shadow: 15px 16px #abfef3;
-  background-color: #b8dad0;
+  box-shadow: 15px 16px #b8f0e0;
+  background-color: #95bdbd;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
 h3 {
-  margin: 0 0 2.1rem 1.3rem;
   text-decoration: underline;
+  padding-left: 1.6rem;
+}
+
+nav {
+  background-color: #6a8a8a;
+  border-right: 8px solid #d0f4e9;
+  width: 100%;
+  color: #000;
+}
+
+#navigation {
+  position: sticky;
+  top: 15px;
+}
+
+p {
+  margin: 0 auto;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tech-stacks-subtitle,
+.project-locally-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.3;
+  padding-left: 3.3rem;
+  margin: 0.3rem 0;
+  font-weight: 300;
+}
+
+.navigation-section {
+  font-size: 1.2rem;
+  padding: 0.3rem 0 0.1rem 1.6rem;
+  font-weight: 400;
+}
+
+/*nth-child(17) is RESOURCE*/
+
+.navigation-section:first-child,
+.navigation-section:nth-child(17) {
+  padding-left: 0.3rem;
+  font-weight: 700;
+}
+
+.navigation-section:first-child:hover,
+.navigation-section:nth-child(17):hover {
+  cursor: pointer;
+  background-color: #d0f4e9;
+  color: #000;
+}
+
+.tech-stacks-subtitle > a:hover {
+  cursor: pointer;
+  background-color: #d0f4e9;
+  color: #000;
+}
+
+ul > .navigation-section > a:hover {
+  cursor: pointer;
+  background-color: #d0f4e9;
+  color: #000;
+}
+
+.project-locally-subtitle > a:hover {
+  cursor: pointer;
+  background-color: #d0f4e9;
+  color: #000;
+}
+
+.container {
+  width: 85%;
+  margin-left: 2.8rem;
 }

@@ -10,179 +10,209 @@
     <title>Static Template</title>
   </head>
   <body>
-    <h1>What is This Project About?</h1>
+    <nav>
+      <ul id="navigation">
+        <li class="navigation-section"><a href="#introduction">WHAT IS THIS PROJECT ABOUT ?</a></li>
+        <li class="navigation-section"><a href="#tech-stacks">TECH STACKS</a></li>
+        <li class="tech-stacks">
+          <li class="tech-stacks-subtitle"><a href="#frontend">Frontend</a></li>
+          <li class="tech-stacks-subtitle"><a href="#backend">Backend</a></li>
+          <li class="tech-stacks-subtitle"><a href="#other-tools">Other tools for development</a></li>
+        </li>
+        <li class="navigation-section"><a href="#where-is-this-project-hosted">HOSTING</a></li>
+        <li class="navigation-section"><a href="#folder-structure">FOLDER STRUCTURE</a></li>
+        <li class="navigation-section"><a href="#running-the-project-locally">RUNNING THE PROJECT LOCALLY</a></li>
+        <li class="project-locally">
+          <li class="project-locally-subtitle"><a href="#starting-the-client-side">Starting the Client side</a></li>
+          <li class="project-locally-subtitle"><a href="#starting-the-server-side">Starting the Server side</a></li>
+          <li class="project-locally-subtitle"><a href="#how-to-login">How to login</a></li>
+          
+        </li>
+        <li class="navigation-section"><a href="#note">NOTE</a></li>
+        <li class="navigation-section"><a href="#for-contributors">FOR CONTRIBUTORS</a></li>
+        <li class="navigation-section"><a href="#branch-naming-convention">BRANCH NAMING CONVENTION</a></li>
+        <li class="navigation-section"><a href="#resource">RESOURCE</a></li>
+        <li class="navigation-section"><a href="#design">DESIGN</a></li>
+        <li class="navigation-section"><a href="#others">OTHERS</a></li>
+        <li class="navigation-section"><a href="#roadmap">ROADMAP</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1 id="introduction">What is This Project About?</h1>
     
-    <p>
-      Feelsify.io is a web that allows users to record their daily levels of
-      anxiety, stress, and depression. Users will also be able to include brief
-      notes that might be relevant to how they are feeling. 
-    </p>
-    <br>
-    <p>
-      The app will store this information and provide users with easy-to-read graphs that will
-      display trends in their mood. </p><br>
+      <p>
+        Feelsify.io is a web that allows users to record their daily levels of
+        anxiety, stress, and depression. Users will also be able to include brief
+        notes that might be relevant to how they are feeling. 
+      </p>
+      <br>
+      <p>
+        The app will store this information and provide users with easy-to-read graphs that will
+        display trends in their mood. </p><br>
 
-      <p>This app is ideal for users who want to stay
-      on top of their mental health and be able to recognize any prolonged,
-      negative trends of anxiety, stress, or depression, which can be
-      detrimental to their health and well-being. </p><br>
-      <p>In the future, we will add
-      quizzes that hope to help users determine whether or not they might be
-      experiencing anxiety, stress, depression, and even burn out.
-    </p>
-    
-    <h2>Tech Stacks</h2>
-    <h3>Frontend:</h3>
-    <ul class="list-front-end">
-      <li>React - client UI</li>
-      <li>Tailwind - CSS</li>
-      <li>
-        Redux - Global state management (specifically react redux toolkit)
-      </li>
-      <li>Yup - Client side form validation</li>
-      <li>Axios - http client for react</li>
-    </ul>
-    <h3>Backend:</h3>
-    <ul>
-      <li>ExpressJS - - Server</li>
-      <li>Bcrypt - Password hashing</li>
-      <li>MongoDB (?)</li>
-    </ul>
-    <h3>Other Tools for Development:</h3>
-    <ul>
-      <li>Postman - For API debugging</li>
-      <li>
-        Redux devTools plugin for firefox or chrome - For state management
-        debugging
-      </li>
-      <li>
-        React developer tools plugin for firefox or chrome - For react debugging
-      </li>
-    </ul>
-    <h2>Where is this project hosted</h2>
-    <p>TBD</p>
-    <h2>Folder Structure</h2>
-    <pre>
-    . 
-    ├──.github/ISSUE_TEMPLATE 
-    ├── client <- frontend part 
-    │   ├── dist 
-    │   ├── public 
-    │   ├── src 
-    │   │   ├── components <- all react components 
-    │   │   ├── images <- images and assets 
-    │   │   ├── App.css 
-    │   │   ├── App.js 
-    │   │   ├── App.test.js 
-    │   │   ├── index.css 
-    │   │   ├── index.js 
-    │   │   ├── reportWebVitals.js 
-    │   │   ├── setupTests.js 
-    │   │   └── store.js <- Redux related 
-    │   ├── .gitignore 
-    │   ├── README.md 
-    │   ├── package-lock.json 
-    │   ├── package.json 
-    │   ├── postcss.config.js
-    │   └── tailwind.config.js <- config file for tailwind 
-    ├── common 
-    ├── server <- backend part of the project 
-    │   ├── APIrouter.js 
-    │   ├── README.md 
-    │   ├── index.js 
-    │   ├── mockAPI.js 
-    │   ├── mockData.js 
-    │   ├── package-lock.json 
-    │   ├── package.json 
-    │   └── start_server.sh 
-    ├── .gitignore 
-    ├── LICENSE 
-    └── README.md
-    </pre>
-     <h2>Running the Project Locally</h2>
-    <p>
-      In order to run the project locally, both client and server app needs to
-      be running.
-    </p>
-    <h3 class="run-project">Starting the Client side:</h3>
-    <ul>
-      <li> navigate to ./client</li>
-      <li> Run <code>npm install</code>  to install all dependencies</li>
-      <li>
-         Run <code>npm start</code>  to start in development mode (default port is 3000 on
-        localhost)
-      </li>
-    </ul>
-
-    <h3 class="run-project">Starting the Server side:</h3>
-    <ul>
-      <li>Navigate to ./server</li>
-      <li>Run <code>npm install</code> to install all dependencies first</li>
-    </ul>
-
-
-      <p class="two-ways">From here, You can start the server in 2 ways:</P> 
-        <p><span>1</span>◽ <code>clear && PORT=3001 node index.js</code> </p> 
-        <p>This command starts the server on port 3001. Open
-      http://localhost:3001/api to view it in your browser. Since React client
-      runs on port 3000 by default, it is recommended to specify the port number
-      when you start the server. </p>
+        <p>This app is ideal for users who want to stay
+        on top of their mental health and be able to recognize any prolonged,
+        negative trends of anxiety, stress, or depression, which can be
+        detrimental to their health and well-being. </p><br>
+        <p>In the future, we will add
+        quizzes that hope to help users determine whether or not they might be
+        experiencing anxiety, stress, depression, and even burn out.
+      </p>
       
-      <p><span>2</span>◽ Start the server with ./start_server.sh</p> 
-      <p> Run
-      -./start_server.sh in the terminal. This will automatically start the
-      server on port 3001. You may first need to make the bash script executable
-      with the command chmod u+x start_server.sh
-    </p>
-    <h3 class="run-project">How to login:</h3>
-    <p>
-      You can use any account in ./client/mockData.js to login. Just use the
-      values of username and password. The easiest account to login is:
-      username: test123 password: test
-    </p>
-    <h2>Note</h2>
-    <p>
-      Server does not work with the browser The server has been designed to work
-      with the client, not with the browser. You can use the program "POSTMAN"
-      to function as an alternative client for development and testing purposes.
-      To see all the available routes and API calls for the server go to
-      APIrouter.js (routes) and mockAPI.js (functions).
-    </p>
-
-    <p>
-      NOTE: As of now, there is no official database yet. All non hard-coded
-      user data will be lost when the server restarts.
-    </p>
-    <h2>For Contributors</h2>
-    <p>
-      <ul>
+      <h2 id="tech-stacks">TECH STACKS</h2>
+      <h3 id="frontend">Frontend:</h3>
+      <ul class="list-front-end">
+        <li>React - client UI</li>
+        <li>Tailwind - CSS</li>
         <li>
-          Give each commit a descriptive message
+          Redux - Global state management (specifically react redux toolkit)
+        </li>
+        <li>Yup - Client side form validation</li>
+        <li>Axios - http client for react</li>
+      </ul>
+      <h3 id="backend">Backend:</h3>
+      <ul>
+        <li>ExpressJS - - Server</li>
+        <li>Bcrypt - Password hashing</li>
+        <li>MongoDB (?)</li>
+      </ul>
+      <h3 id="other-tools">Other Tools for Development:</h3>
+      <ul>
+        <li>Postman - For API debugging</li>
+        <li>
+          Redux devTools plugin for firefox or chrome - For state management
+          debugging
         </li>
         <li>
-           Ideally, each commit contains an isolated, complete change
-        </li> 
-        <p>See here for more details: <a href="https://docs.github.com/en/get-started/quickstart/github-flow#make-changes">https://docs.github.com/en/get-started/quickstart/github-flow#make-changes</a></p>
+          React developer tools plugin for firefox or chrome - For react debugging
+        </li>
       </ul>
-      <h2>Branch naming convention</h2> 
-      <p>TBD</p> 
-      <h1>Resource</h1> 
-      <h2>Design</h2> 
+      <h2 id="where-is-this-project-hosted">HOSTING</h2>
+      <p>TBD</p>
+      <h2 id="folder-structure">FOLDER STRUCTURE</h2>
+      <pre>
+      . 
+      ├──.github/ISSUE_TEMPLATE 
+      ├── client <- frontend part 
+      │   ├── dist 
+      │   ├── public 
+      │   ├── src 
+      │   │   ├── components <- all react components 
+      │   │   ├── images <- images and assets 
+      │   │   ├── App.css 
+      │   │   ├── App.js 
+      │   │   ├── App.test.js 
+      │   │   ├── index.css 
+      │   │   ├── index.js 
+      │   │   ├── reportWebVitals.js 
+      │   │   ├── setupTests.js 
+      │   │   └── store.js <- Redux related 
+      │   ├── .gitignore 
+      │   ├── README.md 
+      │   ├── package-lock.json 
+      │   ├── package.json 
+      │   ├── postcss.config.js
+      │   └── tailwind.config.js <- config file for tailwind 
+      ├── common 
+      ├── server <- backend part of the project 
+      │   ├── APIrouter.js 
+      │   ├── README.md 
+      │   ├── index.js 
+      │   ├── mockAPI.js 
+      │   ├── mockData.js 
+      │   ├── package-lock.json 
+      │   ├── package.json 
+      │   └── start_server.sh 
+      ├── .gitignore 
+      ├── LICENSE 
+      └── README.md
+      </pre>
+      <h2 id="running-the-project-locally">Running the Project Locally</h2>
       <p>
-        Figma for design reference:
-        https://www.figma.com/file/ucsB47XQhtF0xqXDrLgKlR/emotional-paw-prints
+        In order to run the project locally, both client and server app needs to
+        be running.
       </p>
-      <h2>Others</h2>
-    </p>
+      <h3 class="run-project" id="starting-the-client-side">Starting the Client side</h3>
+      <ul>
+        <li> navigate to ./client</li>
+        <li> Run <code>npm install</code>  to install all dependencies</li>
+        <li>
+          Run <code>npm start</code>  to start in development mode (default port is 3000 on
+          localhost)
+        </li>
+      </ul>
 
-    <h2>Roadmap</h2>
-    <p>TBD</p>
-    <h1>Organization Roles</h1>
-    <p>
-      Here is are a list of people who contribute to the project. If you
-      encounter any issues with the project, please contact:
-       [list of people]
-    </p>
+      <h3 class="run-project" id="starting-the-server-side">Starting the Server side</h3>
+      <ul>
+        <li>Navigate to ./server</li>
+        <li>Run <code>npm install</code> to install all dependencies first</li>
+      </ul>
+
+
+        <p class="two-ways">From here, You can start the server in 2 ways:</P> 
+          <p><span>1</span>◽ <code>clear && PORT=3001 node index.js</code> </p> 
+          <p>This command starts the server on port 3001. Open
+        http://localhost:3001/api to view it in your browser. Since React client
+        runs on port 3000 by default, it is recommended to specify the port number
+        when you start the server. </p>
+        
+        <p><span>2</span>◽ Start the server with ./start_server.sh</p> 
+        <p> Run
+        -./start_server.sh in the terminal. This will automatically start the
+        server on port 3001. You may first need to make the bash script executable
+        with the command chmod u+x start_server.sh
+      </p>
+      <h3 class="run-project" id="how-to-login">How to login</h3>
+      <p>
+        You can use any account in ./client/mockData.js to login. Just use the
+        values of username and password. The easiest account to login is:
+        username: test123 password: test
+      </p>
+      <h2 id="note">Note</h2>
+      <p>
+        Server does not work with the browser The server has been designed to work
+        with the client, not with the browser. You can use the program "POSTMAN"
+        to function as an alternative client for development and testing purposes.
+        To see all the available routes and API calls for the server go to
+        APIrouter.js (routes) and mockAPI.js (functions).
+      </p>
+
+      <p>
+        NOTE: As of now, there is no official database yet. All non hard-coded
+        user data will be lost when the server restarts.
+      </p>
+      <h2 id="for-contributors">FOR CONTRIBUTORS</h2>
+      <p>
+        <ul>
+          <li>
+            Give each commit a descriptive message
+          </li>
+          <li>
+            Ideally, each commit contains an isolated, complete change
+          </li> 
+          <p>See here for more details: <a href="https://docs.github.com/en/get-started/quickstart/github-flow#make-changes">https://docs.github.com/en/get-started/quickstart/github-flow#make-changes</a></p>
+        </ul>
+        <h2 id="branch-naming-convention">BRANCH NAMING CONVENTION</h2> 
+        <p>TBD</p> 
+        <h1 id="resource">Resource</h1> 
+        <h2 id="design">DESIGN</h2> 
+        <p>
+          Figma for design reference:
+          https://www.figma.com/file/ucsB47XQhtF0xqXDrLgKlR/emotional-paw-prints
+        </p>
+        <h2 id="others">OTHERS</h2>
+      </p>
+
+      <h2 id="roadmap">ROADMAP</h2>
+      <p>TBD</p>
+      <h1>Organization Roles</h1>
+      <p>
+        Here is are a list of people who contribute to the project. If you
+        encounter any issues with the project, please contact:
+        [list of people]
+      </p>
+    </div>
+    
   </body>
   <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 </html>
