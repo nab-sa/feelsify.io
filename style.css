@@ -19,8 +19,6 @@ body {
   grid-template-columns: 24% 2fr;
 }
 
-
-
 h1 {
   width: fit-content;
   text-align: center;
@@ -52,9 +50,6 @@ nav {
   border-right: 15px solid #d0f4e9;
   width: 100%;
   color: #000;
-  padding-left: 2rem;
-  
-  
 }
 
 #navigation {
@@ -92,12 +87,11 @@ a:visited {
   padding-left: 3.3rem;
   margin: 0.3rem 0;
   font-weight: 300;
-  
 }
 
 .tech-stacks-subtitle > a,
 .project-locally-subtitle > a {
-    border-right: 3.3rem solid #6a8a8a;
+  border-right: 3.3rem solid #6a8a8a;
 }
 
 .navigation-section {
@@ -143,7 +137,6 @@ ul > .navigation-section > a:hover {
 }
 
 .container {
-
   margin-left: 6rem;
   margin-right: 6rem;
 }
