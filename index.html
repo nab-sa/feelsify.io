@@ -134,38 +134,46 @@
         be running.
       </p>
       <h3 class="run-project" id="starting-the-client-side">Starting the Client side</h3>
-      <ul>
-        <li> navigate to ./client</li>
+      <ul class="run-project-lists">
+        <li> navigate to <span class="folder-path">./client</span></li>
         <li> Run <code>npm install</code>  to install all dependencies</li>
         <li>
-          Run <code>npm start</code>  to start in development mode (default port is 3000 on
+           Run <code>npm start</code>  to start in development mode (default port is 3000 on
           localhost)
         </li>
       </ul>
-
+  
       <h3 class="run-project" id="starting-the-server-side">Starting the Server side</h3>
-      <ul>
-        <li>Navigate to ./server</li>
-        <li>Run <code>npm install</code> to install all dependencies first</li>
-      </ul>
-
-
-        <p class="two-ways">From here, You can start the server in 2 ways:</P> 
-          <p><span>1</span>◽ <code>clear && PORT=3001 node index.js</code> </p> 
-          <p>This command starts the server on port 3001. Open
-        http://localhost:3001/api to view it in your browser. Since React client
-        runs on port 3000 by default, it is recommended to specify the port number
-        when you start the server. </p>
-        
-        <p><span>2</span>◽ Start the server with ./start_server.sh</p> 
-        <p> Run
-        -./start_server.sh in the terminal. This will automatically start the
-        server on port 3001. You may first need to make the bash script executable
-        with the command chmod u+x start_server.sh
-      </p>
+      <section class="run-project-lists">
+        <div class="installation">
+          <li>Navigate to <span class="folder-path">./server</span></li>
+          <li>Run <code>npm install</code> to install all dependencies first</li>
+        </div>
+      
+        <div class="two-ways">
+          <p>From here, You can start the server in 2 ways:</p> 
+          <div class="first-way">  
+            <p><span>1</span>. <code>clear && PORT=3001 node index.js</code> </p> 
+            <p>This command starts the server on port 3001. Open
+          http://localhost:3001/api to view it in your browser. Since React client
+          runs on port 3000 by default, it is recommended to specify the port number
+          when you start the server. 
+            </p>
+          </div>
+          <div class="second-way">
+            <p><span>2</span>. Start the server with <span class="folder-path">./server/start_server.sh</span></p> 
+            <p> 
+            Run
+            <span class="folder-path">./server/start_server.sh</span> in the terminal. This will automatically start the
+            server on port 3001. You may first need to make the bash script executable
+            with the command <code>chmod u+x start_server.sh</code>
+            </p>
+          </div>
+        </div> 
+      </section >
       <h3 class="run-project" id="how-to-login">How to login</h3>
       <p>
-        You can use any account in ./client/mockData.js to login. Just use the
+        You can use any account in <span class="folder-path">./client/mockData.js</span> to login. Just use the
         values of username and password. The easiest account to login is:
         username: test123 password: test
       </p>

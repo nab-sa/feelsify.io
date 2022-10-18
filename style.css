@@ -140,3 +140,29 @@ ul > .navigation-section > a:hover {
   margin-left: 6rem;
   margin-right: 6rem;
 }
+
+.run-project-lists,
+#how-to-login ~ p,
+.for-contributors-section {
+  margin-left: 2.5rem;
+}
+
+.tech-stacks-lists > li::before,
+.installation > li::before,
+.run-project-lists > li::before {
+  content: "▪ ";
+}
+
+code {
+  background-color: #e0e0e0;
+  padding: 0.15rem 0.25rem;
+  border-radius: 4px;
+}
+
+.folder-path {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  background-color: #d3e5e5;
+  padding: 0.15rem 0.25rem;
+}
