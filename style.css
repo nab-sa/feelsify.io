@@ -50,12 +50,35 @@ nav {
   border-right: 15px solid #d0f4e9;
   width: 100%;
   color: #000;
+  padding-left: 2rem;
 }
 
 #navigation {
   position: sticky;
-  top: 15px;
+  top: 0px;
+  height: 100vh;
+  /**Scroll bar for non web-kit based web browsers --- */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #d0f4e9 #d0f4e9;
+  /**Scroll bar for non web-kit based web browsers --- */
 }
+
+/** --- Scroll bar for web-kit based web browsers --- */
+
+#navigation::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+#navigation::-webkit-scrollbar-track {
+  background-color: #d0f4e9;
+}
+
+#navigation::-webkit-scrollbar-thumb {
+  background: #a8c6bd;
+}
+/** --- For web-kit based web browsers --- */
 
 p {
   margin: 3rem auto;
