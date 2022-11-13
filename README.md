@@ -1,5 +1,5 @@
 # [feelsify.io](https://feelsify-io.vercel.app/)
-This is a comprehensive guide you on how to install the [Mental-Health-Tracker](https://github.com/Nerds-Who-Code/Mental-Health-Tracker) app.
+This is a comprehensive guide on how to install the [Mental-Health-Tracker](https://github.com/Nerds-Who-Code/Mental-Health-Tracker) app.
 
 Bear in mind the instructions are not complete yet as the app is still in development
 
