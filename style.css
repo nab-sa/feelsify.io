@@ -4,12 +4,8 @@
   box-sizing: border-box;
 }
 
-:root {
-  --color-white: #f8f8f7;
-}
-
 body {
-  background-color: #f8f8f7; /* var(--color-white) */
+  background-color: #f8f8f7;
   color: #000;
   margin: 0 auto;
   font-size: 1.2rem;
@@ -19,69 +15,8 @@ body {
   grid-template-columns: 24% 2fr;
 }
 
-h1 {
-  width: fit-content;
-  text-align: center;
-  margin: 3rem auto 3rem auto;
-  font-size: 2.8rem;
-  color: #000000;
-  font-weight: bolder;
-}
-
-h2 {
-  width: fit-content;
-  font-size: 1.7rem;
-  padding: 0.8rem;
-  margin: 3.5rem 4.8rem 3.5rem -0.8rem;
-  color: rgb(0, 0, 0);
-  box-shadow: 15px 16px #b8f0e0;
-  background-color: #95bdbd;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-h3 {
-  text-decoration: underline;
-  margin: 2rem auto;
-}
-
-nav {
-  background-color: #6a8a8a;
-  border-right: 15px solid #d0f4e9;
-  width: 100%;
-  color: #000;
-  padding-left: 2rem;
-}
-
-#navigation {
-  position: sticky;
-  top: 0px;
-  height: 100vh;
-  /**Scroll bar for non web-kit based web browsers --- */
-  overflow-y: scroll;
-  overflow-x: hidden;
-  scrollbar-width: thin;
-  scrollbar-color: #d0f4e9 #d0f4e9;
-  /**Scroll bar for non web-kit based web browsers --- */
-}
-
-/** --- Scroll bar for web-kit based web browsers --- */
-
-#navigation::-webkit-scrollbar {
-  width: 1.2rem;
-}
-
-#navigation::-webkit-scrollbar-track {
-  background-color: #d0f4e9;
-}
-
-#navigation::-webkit-scrollbar-thumb {
-  background: #a8c6bd;
-}
-/** --- For web-kit based web browsers --- */
-
 p {
-  margin: 3rem auto;
+  margin: 0 auto;
 }
 
 li,
@@ -103,49 +38,83 @@ a:visited {
   color: inherit;
 }
 
+/* THE NAVBAR  */
+
+nav {
+  background-color: #6a8a8a;
+  /*border-right: 8px solid #d0f4e9;*/
+  width: 100%;
+  color: #000;
+}
+
+#navigation {
+  position: sticky;
+  top: 0px;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #d0f4e9 #d0f4e9;
+  /*position: fixed;*/
+}
+
+#navigation::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+#navigation::-webkit-scrollbar-track {
+  background-color: #d0f4e9;
+}
+
+#navigation::-webkit-scrollbar-thumb {
+  background: #a8c6bd;
+}
+
 .tech-stacks-subtitle,
 .project-locally-subtitle {
   font-size: 1.05rem;
   line-height: 1.3;
-  padding-left: 3.3rem;
+  padding-left: 1.6rem;
   margin: 0.3rem 0;
-  font-weight: 300;
-}
-
-.tech-stacks-subtitle > a,
-.project-locally-subtitle > a {
-  border-right: 3.3rem solid #6a8a8a;
+  font-weight: 400;
 }
 
 .navigation-section {
   font-size: 1.2rem;
-  padding: 0.3rem 0 0.1rem 1.6rem;
-  font-weight: 400;
+  padding: 0.3rem 0 0.3rem 0.3rem;
+  font-weight: 500;
 }
 
-/*nth-child(17) is RESOURCE*/
+.tech-stacks-subtitle > a {
+  padding: 0 0.2rem;
+}
 
-.navigation-section:first-child,
-.navigation-section:nth-child(17) {
+.navigation-section li {
   padding-left: 0.3rem;
-  font-weight: 700;
 }
 
-.navigation-section:first-child:hover,
-.navigation-section:nth-child(17):hover {
-  cursor: pointer;
-  background-color: #d0f4e9;
-  color: #000;
+.navigation-section > a {
+  width: 100%;
+}
+
+[href="#resource"] {
+  padding: 0.4rem 0 0.4rem 6.8rem;
+  font-size: 1.4rem;
 }
 
 .tech-stacks-subtitle > a:hover {
   cursor: pointer;
   background-color: #d0f4e9;
   color: #000;
-  border-right: 3.3rem solid #d0f4e9;
 }
 
-ul > .navigation-section > a:hover {
+ul > .navigation-section:hover {
+  cursor: pointer;
+  background-color: #d0f4e9;
+  color: #000;
+}
+
+.navigation-section > li:hover {
   cursor: pointer;
   background-color: #d0f4e9;
   color: #000;
@@ -154,20 +123,56 @@ ul > .navigation-section > a:hover {
 .project-locally-subtitle > a:hover {
   cursor: pointer;
   background-color: #d0f4e9;
-
   color: #000;
-  border-right: 3.3rem solid #d0f4e9;
 }
+/*** CONTAINER'S CONTENT ***/
 
 .container {
-  margin-left: 6rem;
-  margin-right: 6rem;
+  width: 85%;
+  margin-left: 2.8rem;
 }
 
-.run-project-lists,
-#how-to-login ~ p,
-.for-contributors-section {
-  margin-left: 2.5rem;
+.container a {
+  color: #315252;
+  display: inline;
+  border-bottom: #61a2a2 3px solid;
+  width: fit-content;
+}
+
+h1 {
+  width: fit-content;
+  text-align: center;
+  margin: 1.5rem auto 3rem 3.3rem;
+  font-size: 2.8rem;
+  color: #000000;
+  font-weight: bolder;
+}
+
+main {
+  padding-left: 3.3rem;
+}
+
+h2 {
+  width: fit-content;
+  font-size: 1.7rem;
+  padding: 0.8rem;
+  margin: 1.3rem 2.5rem 3.5rem 0;
+  color: rgb(0, 0, 0);
+  box-shadow: 15px 16px #b8f0e0;
+  background-color: #95bdbd;
+  font-weight: 900;
+}
+
+h3 {
+  text-decoration: underline;
+  padding-left: 1.6rem;
+}
+
+/* TECH STACKS */
+
+.tech-stacks-lists {
+  margin-bottom: 1.4rem;
+  padding-left: 3.3rem;
 }
 
 .tech-stacks-lists > li::before,
@@ -175,6 +180,16 @@ ul > .navigation-section > a:hover {
 .run-project-lists > li::before {
   content: "▪ ";
 }
+
+.installation {
+  margin-bottom: 0.6rem;
+}
+
+.pre-folder {
+  color: #828282;
+}
+
+/** RUNNING THE PROJECT LOCALLY */
 
 code {
   background-color: #e0e0e0;
@@ -188,4 +203,116 @@ code {
   letter-spacing: 0.1rem;
   background-color: #d3e5e5;
   padding: 0.15rem 0.25rem;
+  border-radius: 4px;
+}
+
+.two-ways > p:nth-child(1),
+.first-way {
+  margin-bottom: 1.8rem;
+}
+
+.first-way > p > span,
+.second-way > p > span {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.run-project-lists,
+#how-to-login ~ p,
+.for-contributors-section {
+  margin-left: 3.3rem;
+}
+
+.run-project-lists,
+#how-to-login ~ p {
+  margin-bottom: 3rem;
+}
+
+/*FOR CONTRIBUTORS / DESIGN */
+/*
+.for-contributors-section > a,
+#design ~ a {
+  color: #315252;
+  display: inline;
+  border-bottom: #61a2a2 3px solid;
+  width: fit-content;
+}
+*/
+.for-contributors-section > a:hover,
+#design ~ a:hover {
+  opacity: 0.5;
+}
+
+/** Responsive CSS **/
+
+@media screen and (max-width: 940px) {
+  body {
+    background-color: #f8f8f7;
+    color: #000;
+    margin: 0 auto;
+    display: block;
+    font-size: 1rem;
+    font-family: "Roboto Mono", monospace;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  main,
+  li,
+  .run-project-lists,
+  .for-contributors-section {
+    margin-left: 0rem;
+    padding: 0;
+  }
+
+  #how-to-login ~ p {
+    margin-left: 1rem;
+  }
+
+  h1 {
+    width: fit-content;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #000000;
+    font-weight: bolder;
+    margin: 1rem auto 2rem auto;
+  }
+
+  h2 {
+    width: fit-content;
+    font-size: 1.4rem;
+    padding: 0.8rem;
+    margin: 1.3rem 2.5rem 3.5rem 0;
+    color: rgb(0, 0, 0);
+    box-shadow: 15px 16px #b8f0e0;
+    background-color: #95bdbd;
+    font-weight: 900;
+  }
+
+  h3 {
+    text-decoration: underline;
+    padding-left: 0.3rem;
+  }
+
+  ul,
+  .tech-stacks-lists,
+  .run-project-lists {
+    padding-left: 1.2rem;
+  }
+
+  .first-way > p:nth-child(2),
+  .second-way > p:nth-child(2) {
+    margin-top: 1rem;
+  }
 }
