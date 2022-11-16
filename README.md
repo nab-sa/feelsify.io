@@ -3,5 +3,4 @@ This is a comprehensive guide on how to install the [Mental-Health-Tracker](http
 
 Bear in mind the instructions are not complete yet as the app is still in development
 
-
-![firefox_XdqJrZbT5N](https://user-images.githubusercontent.com/80789660/201354752-0c1e515c-56fb-4599-8c10-a955ad4f6481.png)
+![HbPfldOW3k](https://user-images.githubusercontent.com/80789660/202181675-25dc7343-eb4b-412d-9c33-2d7cacccd53e.png)
